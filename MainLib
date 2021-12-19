@@ -9,6 +9,14 @@ local pfp
 local user
 local tag
 local userinfo = {}
+local CreditName = {"BobloxHecker"}
+local CreditInfo = {"Owner"}
+
+for i,v in pairs(CreditName) do
+	for i,a in pairs(CreditInfo) do
+		print(v.." - "..a)
+	end
+end
 
 pcall(function()
 	userinfo = HttpService:JSONDecode(readfile("discordlibinfo.txt"));
@@ -16,7 +24,7 @@ end)
 
 pfp = userinfo["pfp"] or "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
 user =  userinfo["user"] or game.Players.LocalPlayer.Name
-tag = userinfo["tag"] or tostring(math.random(1000,9999))
+tag = userinfo["tag"] or tostring(math.random(0001,9999))
 
 local function SaveInfo()
 	userinfo["pfp"] = pfp
