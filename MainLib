@@ -3258,4 +3258,7 @@ function DiscordLib:Window(text)
 	end
 	return ServerHold
 end
+
+DiscordLib:Notification("Discord Lib", "Discord Lib ReVamped By BobloxHecker, Free to use as it is copied to your clipboard, credit to whoever made this first!", "Thank you to who made this!")
+
 return DiscordLib
