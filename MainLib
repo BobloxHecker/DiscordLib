@@ -9,8 +9,8 @@ local pfp
 local user
 local tag
 local userinfo = {}
-local CreditName = {"BobloxHecker"}
-local CreditInfo = {"Owner"}
+local CreditName = {"BobloxHecker", "No One"}
+local CreditInfo = {"Owner", "Tester"}
 
 for i,v in pairs(CreditName) do
 	for i,a in pairs(CreditInfo) do
