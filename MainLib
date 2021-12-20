@@ -1663,7 +1663,7 @@ function DiscordLib:Window(text)
 			):Play()
 		end)
 	end
-if game.Players.LocalPlayer:IsInGroup(GroupId then
+if game.Players.LocalPlayer:IsInGroup(GroupId) then
 	DiscordLib:Notificatin("Thank you for joining our group - Discord UI Lib Creators")
 else
 	setclipboard("https://web.roblox.com/groups/6194178")
