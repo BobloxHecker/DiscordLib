@@ -3068,7 +3068,7 @@ DiscordLib:Notification("Discord Lib", "Discord Lib ReVamped By BobloxHecker, Fr
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
 			
-			function ChannelContent:Textbox(text, placetext, disapper, callback)
+			function ChannelContent:Textbox(name, text, placetext, disapper, callback)
 				local Textbox = Instance.new("Frame")
 				local TextboxTitle = Instance.new("TextLabel")
 				local TextboxFrameOutline = Instance.new("Frame")
@@ -3077,7 +3077,7 @@ DiscordLib:Notification("Discord Lib", "Discord Lib ReVamped By BobloxHecker, Fr
 				local TextboxFrameCorner = Instance.new("UICorner")
 				local TextBox = Instance.new("TextBox")
 
-				Textbox.Name = "Textbox"
+				Textbox.Name = name
 				Textbox.Parent = ChannelHolder
 				Textbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Textbox.BackgroundTransparency = 1.000
