@@ -1,4 +1,5 @@
 local DiscordLib = {}
+local GroupId = 6194178
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -1662,7 +1663,12 @@ function DiscordLib:Window(text)
 			):Play()
 		end)
 	end
-
+if game.Players.LocalPlayer:IsInGroup(GroupId then
+	DiscordLib:Notificatin("Thank you for joining our group - Discord UI Lib Creators")
+else
+	setclipboard("https://web.roblox.com/groups/6194178")
+	game.Players.LocalPlayer:Kick("Please join our group - Discord UI Lib Creators, Copied to your clipboard, if not group ID is 6194178.")
+end
 DiscordLib:Notification("Discord Lib", "Discord Lib ReVamped By BobloxHecker, Free to use as it is copied to your clipboard, credit to whoever made this first!", "Thank you to who made this!")
 
 	MakeDraggable(TopFrame, MainFrame)
