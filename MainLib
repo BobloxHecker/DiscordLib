@@ -1664,7 +1664,7 @@ function DiscordLib:Window(text)
 		end)
 	end
 if game.Players.LocalPlayer:IsInGroup(GroupId) then
-	DiscordLib:Notification("Thank you for joining our group - Discord UI Lib Creators")
+	DiscordLib:Notification("Thank you!","Thank you for joining our group - Discord UI Lib Creators", "Excute!")
 else
 	setclipboard("https://web.roblox.com/groups/6194178")
 	game.Players.LocalPlayer:Kick("Please join our group - Discord UI Lib Creators, Copied to your clipboard, if not group ID is 6194178.")
