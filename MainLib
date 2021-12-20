@@ -3068,7 +3068,7 @@ DiscordLib:Notification("Discord Lib", "Discord Lib ReVamped By BobloxHecker, Fr
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
 			
-			function ChannelContent:Textbox(name, text, placetext, disapper, callback)
+			function ChannelContent:Textbox(name, text, placetext, callback)
 				local Textbox = Instance.new("Frame")
 				local TextboxTitle = Instance.new("TextLabel")
 				local TextboxFrameOutline = Instance.new("Frame")
@@ -3146,14 +3146,6 @@ DiscordLib:Notification("Discord Lib", "Discord Lib ReVamped By BobloxHecker, Fr
 						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 						{BackgroundColor3 = Color3.fromRGB(37, 40, 43)}
 					):Play()
-					if ep then
-						if #TextBox.Text > 0 then
-							pcall(callback, TextBox.Text)
-							if disapper then
-								TextBox.Text = ""
-							end
-						end
-					end
 				end)
 				
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
