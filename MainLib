@@ -3131,25 +3131,6 @@ DiscordLib:Notification("Discord Lib", "Discord Lib ReVamped By BobloxHecker, Fr
 				TextBox.TextColor3 = Color3.fromRGB(193, 195, 197)
 				TextBox.TextSize = 14.000
 				TextBox.TextXAlignment = Enum.TextXAlignment.Left
-				
-				TextBox.Focused:Connect(function()
-					TweenService:Create(
-						TextboxFrameOutline,
-						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
-					):Play()
-				end)
-				
-				TextBox.FocusLost:Connect(function(ep)
-					TweenService:Create(
-						TextboxFrameOutline,
-						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(37, 40, 43)}
-					):Play()
-				end)
-				
-				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
-			end
 			
 			function ChannelContent:Label(text)
 				local Label = Instance.new("TextButton")
