@@ -3131,6 +3131,7 @@ DiscordLib:Notification("Discord Lib", "Discord Lib ReVamped By BobloxHecker, Fr
 				TextBox.TextColor3 = Color3.fromRGB(193, 195, 197)
 				TextBox.TextSize = 14.000
 				TextBox.TextXAlignment = Enum.TextXAlignment.Left
+			end)
 			
 			function ChannelContent:Label(text)
 				local Label = Instance.new("TextButton")
